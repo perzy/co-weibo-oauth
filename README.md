@@ -1,10 +1,13 @@
-co-wechat-oauth
+co-weibo-oauth
 ===============
-Wechat OAuth for ES6。微信公共平台OAuth接口消息接口服务中间件与API SDK
+Weibo OAuth for ES6。微博公共平台OAuth SDK
+
+fork from [co-wechat-oauth](https://github.com/node-webot/co-wechat-oauth)
+感谢co-wechat-oauth作者以及所有贡献者!!
 
 ## 模块状态
 
-- [![NPM version](https://badge.fury.io/js/co-wechat-oauth.png)](http://badge.fury.io/js/co-wechat-oauth)
+- [![NPM version](https://badge.fury.io/js/co-weibo-oauth.png)](http://badge.fury.io/js/co-weibo-oauth)
 - [![Build Status](https://travis-ci.org/node-webot/co-wechat-oauth.png?branch=master)](https://travis-ci.org/node-webot/co-wechat-oauth)
 - [![Dependencies Status](https://david-dm.org/node-webot/co-wechat-oauth.png)](https://david-dm.org/node-webot/co-wechat-oauth)
 - [![Coverage Status](https://coveralls.io/repos/node-webot/co-wechat-oauth/badge.png)](https://coveralls.io/r/node-webot/co-wechat-oauth)
@@ -13,14 +16,12 @@ Wechat OAuth for ES6。微信公共平台OAuth接口消息接口服务中间件�
 - OAuth授权
 - 获取基本信息
 
-OAuth2.0网页授权，使用此接口须通过微信认证，如果用户在微信中（Web微信除外）访问公众号的第三方网页，公众号开发者可以通过此接口获取当前用户基本信息（包括昵称、性别、城市、国家）。详见：[官方文档](http://mp.weixin.qq.com/wiki/17/c0f37d5704f0b64713d5d2c37b468d75.html)
-
-详细参见[API文档](http://doxmate.cool/node-webot/co-wechat-oauth/api.html)
+OAuth2.0网页授权，使用此接口须通过微博认证.
 
 ## Installation
 
 ```sh
-$ npm install co-wechat-oauth
+$ npm install co-weibo-oauth
 ```
 
 ## Usage
@@ -29,7 +30,7 @@ $ npm install co-wechat-oauth
 引入OAuth并实例化
 
 ```js
-var OAuth = require('co-wechat-oauth');
+var OAuth = require('co-weibo-oauth');
 var client = new OAuth('your appid', 'your secret');
 ```
 
@@ -75,32 +76,6 @@ var openid = token.data.openid;
 
 ```js
 var userInfo = yield client.getUser('openid');
-```
-
-## 捐赠
-如果您觉得Wechat OAuth对您有帮助，欢迎请作者一杯咖啡
-
-![捐赠wechat](https://cloud.githubusercontent.com/assets/327019/2941591/2b9e5e58-d9a7-11e3-9e80-c25aba0a48a1.png)
-
-或者[![](http://img.shields.io/gratipay/JacksonTian.svg)](https://www.gittip.com/JacksonTian/)
-
-## 交流群
-QQ群：157964097，使用疑问，开发，贡献代码请加群。
-
-## Contributors
-感谢以下贡献者：
-
-```
-$ git summary
-
- project  : co-wechat-oauth
- repo age : 55 minutes
- active   : 1 days
- commits  : 2
- files    : 7
- authors  :
-     2  Jackson Tian  100.0%
-
 ```
 
 ## License
