@@ -15,7 +15,8 @@
     "oauth"
   ],
   "dependencies": {
-    "urllib": "2.4.0"
+    "urllib": "2.4.0",
+    "lodash": "4.2.0"
   },
   "devDependencies": {
     "supertest": "*",
