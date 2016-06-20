@@ -1,6 +1,6 @@
 {
   "name": "co-weibo-oauth",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Co版微博公共平台OAuth",
   "main": "index.js",
   "scripts": {
